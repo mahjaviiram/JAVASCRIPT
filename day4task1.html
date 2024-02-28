@@ -1,0 +1,31 @@
+<html>
+    <body>
+         
+        <button onclick="d()">SEE STUDENT INFO</button>
+        <table border="1px">
+
+        </table>
+        <script>
+            var arr=[a=['sno','name','city','college','fname'],a1=[1,'ruchi','lko','srmu','kp singh'],a3=[2,'riyya','sul','ggpa','pn maurya'],
+            a3=[3,'priya','lko','rmu','jn singh'],a4=[4,'raja','amt','gga','jp sharma']
+        ]
+        //document.write(a)
+        var t = document.querySelector("table")
+        var x=""
+        function d(){
+            for(var i=0;i<arr.length;i++){
+                var t1 ="<tr>"
+                for(var j=0;j<arr[i].length;j++){
+                    //td=td+"<td"+arr[i][j]+"</td>"  
+                    t1=t1+"<td>"+arr[i][j]+"</td>"
+                }
+               t1+="</tr>"
+               x+=t1
+            }
+            t.innerHTML=x
+            //document.write(td)
+           
+        }
+        </script>
+    </body>
+</html>

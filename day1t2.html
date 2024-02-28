@@ -1,0 +1,80 @@
+<html>
+<body>
+Enroll No :<br>
+<input type="text" id="t1"/>
+<span id="msg1"></span><br>
+Today Is :<br>
+<input type="text" id="t2"/>
+<span id="msg2"></span><br>
+Name :<br>
+<input type="text" id="t3"/>
+<span id="msg3"></span><br>
+Apply For :<br>
+<input type="text" id="t4"/>
+<span id="msg4"></span><br>
+College Name :<br>
+<input type="text" id="t5"/>
+<span id="msg5"></span><br>
+Course :<br>
+<input type="text" id="t6"/>
+<span id="msg6"></span><br>
+Year :<br>
+<input type="number" id="t7"/>
+<span id="msg7"></span><br>
+Contact NO :<br>
+<input type="number" id="t8"/>
+<span id="msg8"></span><br>
+Email Id :<br>
+<input type="email" id="t9"/>
+<span id="msg9"></span><br>
+Amount To Pay :<br>
+<input type="number" id="t10"/>
+<span id="msg10"></span><br>
+<button onclick="myFun()">Register Now</button>
+<script>
+function myFun()
+{
+   var txt1=document.getElementById("t1");
+   var txt2=document.getElementById("t2");
+   var txt3=document.getElementById("t3");
+   var txt4=document.getElementById("t4");
+   var txt5=document.getElementById("t5");
+   var txt6=document.getElementById("t6");
+   var txt7=document.getElementById("t7");
+   var txt8=document.getElementById("t8");
+   var txt9=document.getElementById("t9");
+   var txt10=document.getElementById("t10");
+   var m1=document.getElementById("msg1");
+   var m2=document.getElementById("msg2");
+   var m3=document.getElementById("msg3");
+   var m4=document.getElementById("msg4");
+   var m5=document.getElementById("msg5");
+   var m6=document.getElementById("msg6");
+   var m7=document.getElementById("msg7");
+   var m8=document.getElementById("msg8");
+   var m9=document.getElementById("msg9");
+   var m10=document.getElementById("msg10");
+   m1.innerText=txt1.value
+   m2.innerText=txt2.value
+   m3.innerText=txt3.value
+   m4.innerText=txt4.value
+   m5.innerText=txt5.value
+   m6.innerText=txt6.value
+   m7.innerText=txt7.value
+   m8.innerText=txt8.value
+   m9.innerText=txt9.value
+   m10.innerText=txt10.value
+   m1.style.color="blue"
+   m2.style.color="red"
+   m3.style.color="pink"
+   m4.style.color="green"
+   m5.style.color="black"
+   m6.style.color="skyblue"
+   m7.style.color="purple"
+   m8.style.color="orange"
+   m9.style.color="aqua"   
+   m10.style.color="yellow"   
+}
+</script>
+</body>
+</html>

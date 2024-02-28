@@ -1,0 +1,185 @@
+<html>
+<head>
+<link href="../BOOTSTRAP2023/CSS/all.css" rel="stylesheet"/>
+<link href="../BOOTSTRAP2023/CSS/bootstrap.css" rel="stylesheet"/>
+<script src="..BOOTSTRAP2023/JS/bootstrap.bundle.js" ></script>
+<style>
+ .outer
+ {
+  height:100%;
+  width:100%;
+  background:#e8e8ff;
+ }
+ .t1
+ {
+  height:50px;
+ }
+ .t2
+ {
+ height:50px;
+ }
+ .form
+ {
+ min-height:400px;
+ }
+ .btn
+ {
+ height:35px;
+ width:150px;
+ background:#f9c958;
+ line-height:10px;
+ color:white;
+ }
+</style>
+
+</head>
+<body>
+     <div class="container-fluid outer">
+	    <div class="row t1">
+		 <div class="col-sm-12 text-center mt-3">
+		    <h2>Register <span style="color:#f9c958;">With Us</span></h2>
+		 </div>
+		</div>
+		<div class="row t2 mb-5">
+		 <div class="col-sm-12 text-center mt-2 ">
+		    <p>you are just one step behind to join the Techpile.I promise you to give my best if you will be a <br>part of Techpile.</p>
+		 </div>
+		</div>
+		<div class="row form">
+		 <div class="col-sm-2"></div>
+		 <div class="col-sm-8">
+		    <div class="row form">
+			<div class="col-sm-6">
+			Enroll No:<br>
+			<div class="input-group mb-3">
+			<span class="input-group-text">
+			<i class="fa-solid fa-pencil"></i></span>
+			<input type="number" placeholder="TPT-ST20" class="form-control" id="t1"/>
+			<span  id="msg1"></span>
+			</div>
+			Name:<br>
+			<div class="input-group mb-3">
+			<span class="input-group-text" >
+			<i class="fa-solid fa-user"></i></span>
+			<input type="text" placeholder="Username" class="form-control" id="t3"/>
+			<span id="msg3"></span>
+			</div>
+		     College Name:<br>
+			<div class="input-group mb-3">
+			<span class="input-group-text" >
+			<i class="fa-solid fa-building"></i></span>
+			<input type="text"  class="form-control" id="t5"/>
+			<span  id="msg5"></span>
+			</div>
+			Year:<br>
+			<div class="input-group mb-3">
+			<span class="input-group-text" >
+			<i class="fa-solid fa-user"></i></span>
+			<input type="text" placeholder="Your Pursuing Year" class="form-control" id="t7"/>
+			<span  id="msg7"></span>
+			</div>
+			Email ID:<br>
+			<div class="input-group mb-3">
+			<span class="input-group-text" >
+			<i class="fa-solid fa-envelope"></i></span>
+			<input type="text" placeholder="Email Id" class="form-control" id="t9"/>
+			<span  id="msg9"></span>
+			</div>
+			<div>
+			
+			</div>
+			</div>
+			<div class="col-sm-6">
+			Today Is:<br>
+			<div class="input-group mb-3">
+			<span class="input-group-text"> 
+			<i class="fa-solid fa-calendar"></i></span>
+			<input type="text" placeholder="3-12-2023" class="form-control" id="t2"/>
+			<span  id="msg2"></span>
+			</div>
+			Apply For:<br>
+			<div class="input-group mb-3">
+			<span class="input-group-text">
+			<i class="fa-solid fa-pencil"></i></span>
+			<input type="text" placeholder="Select Training Name" class="form-control" id="t4"/>
+			<span  id="msg4"></span>
+			</div>
+		    Course:<br>
+			<div class="input-group mb-3">
+			<span class="input-group-text" >
+			<i class="fa-solid fa-laptop"></i></span>
+			<input type="text" placeholder="Select Your Course" class="form-control" id="t6"/>
+			<span  id="msg6"></span>
+			</div>
+			Mobile No:<br>
+			<div class="input-group mb-3">
+			<span class="input-group-text" >
+			<i class="fa-solid fa-phone"></i></span>
+			<input type="number" placeholder="Username" class="form-control" id="t8"/>
+			<span  id="msg8"></span>
+			</div>
+			Amount to pay:<br>
+			<div class="input-group mb-3">
+			<span class="input-group-text" >
+			<i class="fa-solid fa-"></i></span>
+			<input type="text"  class="form-control" id="t10"/>
+			<span  id="msg10"></span>
+			</div>
+			</div>
+			</div>
+			<div class="row">
+			<div class="col-sm-12">
+			 <input type="button" value="Register Now" class="btn" onclick="myFun()"/>
+			</div>
+			</div>
+		 </div>
+		 <div class="col-sm-2"></div>
+		</div>
+	 </div>
+	 <script>
+function myFun()
+{
+   var txt1=document.getElementById("t1");
+   var txt2=document.getElementById("t2");
+   var txt3=document.getElementById("t3");
+   var txt4=document.getElementById("t4");
+   var txt5=document.getElementById("t5");
+   var txt6=document.getElementById("t6");
+   var txt7=document.getElementById("t7");
+   var txt8=document.getElementById("t8");
+   var txt9=document.getElementById("t9");
+   var txt10=document.getElementById("t10");
+   var m1=document.getElementById("msg1");
+   var m2=document.getElementById("msg2");
+   var m3=document.getElementById("msg3");
+   var m4=document.getElementById("msg4");
+   var m5=document.getElementById("msg5");
+   var m6=document.getElementById("msg6");
+   var m7=document.getElementById("msg7");
+   var m8=document.getElementById("msg8");
+   var m9=document.getElementById("msg9");
+   var m10=document.getElementById("msg10");
+   m1.innerText=txt1.value
+   m2.innerText=txt2.value
+   m3.innerText=txt3.value
+   m4.innerText=txt4.value
+   m5.innerText=txt5.value
+   m6.innerText=txt6.value
+   m7.innerText=txt7.value
+   m8.innerText=txt8.value
+   m9.innerText=txt9.value
+   m10.innerText=txt10.value
+   m1.style.color="blue"
+   m2.style.color="red"
+   m3.style.color="pink"
+   m4.style.color="green"
+   m5.style.color="black"
+   m6.style.color="skyblue"
+   m7.style.color="purple"
+   m8.style.color="orange"
+   m9.style.color="aqua"   
+   m10.style.color="yellow"   
+}
+</script>
+</body>
+</html>

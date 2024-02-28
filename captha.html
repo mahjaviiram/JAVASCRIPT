@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Captcha</title>
+<link href="../BOOTSTRAP2023/css/all.css" rel="stylesheet"/>
+<link href="../BOOTSTRAP2023/css/bootstrap.css" rel="stylesheet"/>
+<script src="../BOOTSTRAP2023/js/bootstrap.bundle.js"></script>
+<style>
+
+.dv1
+{
+height:300px;
+border:1px solid black;
+margin:50px auto;
+}
+.dv2
+{
+height:50px;
+border:1px solid black;
+margin:30px 0px;
+margin-left:10px;
+background:#bebebd;
+}
+#btn1
+{
+height:50px;
+margin:30px 3px;
+border:1px solid black;
+}
+.dv3
+{
+height:50px;
+border:1px solid black;
+width:475px;
+margin:10px 0px;
+line-height:50px;
+padding-left:20px;
+font-size:18px;
+font-weight:bold;
+}
+#btn2
+{
+height:40px;
+margin:10px 0px;
+width:150px;
+border:1px solid black;
+}
+</style>
+</head>
+<body onload="demo()">
+<div class="row">
+<div class="col-sm-5 dv1">
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-8 dv2"></div>
+<div class="col-sm-2 ">
+<button id="btn1" onclick="demo()">Refresh</button>
+</div>
+<div class="col-sm-1"></div>
+</div>
+<div class="row">
+<div class="col-sm-1"></div>
+<div class="col-sm-10"><input type="text" placeholder="Enter captcha Code" class="dv3"/></div>
+<div class="col-sm-1"></div>
+</div>
+<div class="row">
+<div class="col-sm-1">
+
+</div>
+<div class="col-sm-5 "><span id="sp"></span>
+<button id="btn2" onclick="demo1()">Submit</button></div>
+<div class="col-sm-5 "></div>
+<div class="col-sm-1"></div>
+</div>
+</div>
+</div>
+<script>
+var div1=document.querySelector(".dv2")
+var demo=()=>
+{
+var c=""
+var code="mM1a2A3hH4j5J6aA7vVi8Ii9RrMam"
+for(var i=1; i<=6; i++)
+{
+var rindex=Math.floor(Math.random()*code.length)
+var rchar=code[rindex]
+c=c+rchar;
+}
+div1.innerHTML=c
+div1.style.fontSize="20px"
+div1.style.letterSpacing="10px"
+div1.style.fontWeight="bold"
+div1.style.textAlign="center"
+}
+var demo1=()=>
+{
+div1.innerHTML
+var div2=document.querySelector(".dv3")
+div2.value
+if(div1.innerHTML==div2.value)
+{
+var sp=document.querySelector("#sp")
+sp.style.color="green"
+sp.innerHTML="valid captcha code..."
+}
+else
+{
+var sp=document.querySelector("#sp")
+sp.style.color="red"
+sp.innerHTML="invalid captcha code....."
+}
+}
+</script>
+</body>
+</html>

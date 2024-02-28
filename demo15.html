@@ -1,0 +1,33 @@
+<html>
+<head></head>
+<body>
+<select id="se">
+<option>--------select course------</option>
+<option>HTML</option>
+<option>JS</option>
+<option>REACT JS</option>
+<option>VUE JS</option>
+</select>
+<span id="sp"></span>
+<button onclick="demo14()">CLICK ME</button>
+
+<script>
+function demo14()
+{
+   var f1=document.getElementById("se");
+   var f2=document.getElementById("sp");
+   if(f1.value=="HTML" )
+   {
+     f2.style.color="red";
+     
+   }
+   if(f1.value=="JS" )
+   {
+     f2.style.color="green";
+     
+   }
+   f2.innerText=f1.value;
+}
+</script>
+</body>
+</html>

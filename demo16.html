@@ -1,0 +1,24 @@
+<html>
+<head></head>
+<body>
+<select id="se">
+<option>--------select course------</option>
+<option>HTML</option>
+<option>JS</option>
+<option>REACT JS</option>
+<option>VUE JS</option>
+</select>
+<input type="text" id="in"/>
+<button onclick="demo14()">CLICK ME</button>
+
+<script>
+function demo14()
+{
+   var f1=document.getElementById("se").value
+   var f2=document.getElementById("in")
+   f2.value=f1;
+   f2.style.color="blue"
+}
+</script>
+</body>
+</html>

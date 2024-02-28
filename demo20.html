@@ -1,0 +1,21 @@
+<html>
+<head></head>
+<body>
+<img src="images/2.jpg" id="im1" height="300px"/>
+<img src="images/3.jpg" id="im2" height="300px"/>
+
+<script>
+function demo20()
+{
+var i1=document.querySelector("#im1")
+var i2=document.querySelector("#im2")
+var path1=i1.src
+var path2=i2.src
+i1.src=path2
+i2.src=path1	
+}
+//window.setInterval("demo20()",1000)
+window.setTimeout("demo20()",3000)
+</script>
+</body>
+</html>

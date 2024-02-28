@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <select name="" id="s">
+            <option value="">---Select Training type---</option>
+            <option value="6000">Summer Training</option>
+            <option value="6500">Winter Training</option>
+            <option value="22000">Apprenticeship</option>
+            <option value="5000">Industrial Training</option>
+        </select>
+        <input type="number" name="" id="n">
+        <button id="bt" onclick="demo()">Click to check the fee</button>
+        <script>
+            function demo(){
+                var a = document.getElementById("s").value
+                var b = document.getElementById("n").value=a
+            }
+            var a = document.getElementById("s")
+            var b = document.getElementById("n")
+            var c = document.getElementById("bt")
+            a.style.border="1px solid blue"
+            b.style.border="1px solid blue"
+            c.style.border="1px solid blue"
+            c.style.color="blue"
+            a.style.height="35px"
+            b.style.height="35px"
+            c.style.height="35px"
+            a.style.paddingX="5px"
+            b.style.paddingX="5px"
+        </script>
+    </body>
+</html>
